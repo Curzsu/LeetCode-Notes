@@ -1,2 +1,2 @@
 # LeetCode-Notes
-力扣刷题
+力扣刷题笔记
