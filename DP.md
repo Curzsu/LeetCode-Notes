@@ -1,4 +1,4 @@
-# DP题单介绍
+# DP题单
 
 >题目整合自各大经典题单，其中光是 `力扣100+150+75` 就至少可以覆盖中大厂 **80%** 的算法题。
 >
@@ -48,7 +48,7 @@
 
 [32. 最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/)
 
-[64. 最小路径和（25东华复试上机题）](https://leetcode.cn/problems/minimum-path-sum/)
+[64. 最小路径和（类似25东华复试上机题）](https://leetcode.cn/problems/minimum-path-sum/)
 
 [5. 最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/)
 
@@ -61,6 +61,8 @@
 [53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/)
 
 [72. 编辑距离（东华OJ原题）](https://leetcode.cn/problems/edit-distance/)
+
+
 
 
 
@@ -84,6 +86,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 ## LeetCode 75
 
 [714. 买卖股票的最佳时机含手续费](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
@@ -93,6 +105,14 @@
 [790. 多米诺和托米诺平铺](https://leetcode.cn/problems/domino-and-tromino-tiling/)
 
 [1137. 第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/)
+
+
+
+
+
+
+
+
 
 
 
@@ -138,6 +158,8 @@
 
 
 
+
+
 ## Acwing算法基础课
 
 [01背包问题](https://www.acwing.com/problem/content/2/)
@@ -164,6 +186,17 @@
 
 ### 62. 不同路径（东华OJ原题）
 ### 70. 爬楼梯
+
+[70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)
+
+
+
+
+
+
+
+
+
 ### 118. 杨辉三角
 ### 198. 打家劫舍
 ### 279. 完全平方数
@@ -201,12 +234,128 @@
 ## **代码随想录**
 
 ### 509. 斐波那契数
-### 70. 爬楼梯
+
+[509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/)
+
+>**斐波那契数** （通常用 F(n) 表示）形成的序列称为 **斐波那契数列** 。该数列由 0 和 1 开始，后面的每一项数字都是前面两项数字的和。也就是：
+>
+>F(0) = 0，F(1) = 1
+>
+>F(n) = F(n - 1) + F(n - 2)，其中 n > 1
+>
+>给定 n ，请计算 F(n) 。
+>
+> 
+>
+>**示例 1：**
+>
+>**输入：**n = 2
+>
+>**输出：**1
+>
+>**解释：**F(2) = F(1) + F(0) = 1 + 0 = 1
+>
+>**示例 2：**
+>
+>**输入：**n = 3
+>
+>**输出：**2
+>
+>**解释：**F(3) = F(2) + F(1) = 1 + 1 = 2
+>
+>**示例 3：**
+>
+>**输入：**n = 4
+>
+>**输出：**3
+>
+>**解释：**F(4) = F(3) + F(2) = 2 + 1 = 3
+>
+> 
+>
+>**提示：**
+>
+>- 0 <= n <= 30
+
+
+
+思路：
+
+
+
+```C++
+class Solution {
+public:
+    int fib(int n) {
+        int dp[31] = {};
+        dp[1] = 1;
+        for(int i = 2; i <= n; i++)
+            dp[i] = dp[i - 1] + dp[i - 2];
+        return dp[n];
+    }
+};
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 746. 使用最小花费爬楼梯
+
+
+
+
+
 ### 343. 整数拆分（东华OJ原题）
+
+
+
+
+
+
+
 ### 96. 不同的二叉搜索树
+
+
+
+
+
+
+
 ### 1049. 最后一块石头的重量 II
+
+
+
+
+
+
+
 ### 377. 组合总和 Ⅳ
+
+
+
+
+
+
+
+
+
 ### 518. 零钱兑换 II
 ### 494. 目标和
 ### 213. 打家劫舍 II
